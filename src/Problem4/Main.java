@@ -25,9 +25,9 @@ public class Main {
         ArrayList <Character> oneArr = toArrayList(one);
         ArrayList <Character> twoArr = toArrayList(two);
         boolean isAnagram2 = true;
-        for (int i = 0; i < oneArr.size(); i++) {
-            if(!twoArr.contains(oneArr.get(i))){
-               return false;
+        for (Character character : oneArr) {
+            if (!twoArr.contains(character)) {
+                return false;
             }
         }
         return true;
