@@ -46,9 +46,9 @@ public class Main {
     }
     public static ArrayList<String> getSums2(int sum, ArrayList Factors) {
         ArrayList <String> Sums = new ArrayList<>();
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                for (int k = 0; k < 10; k++) {
+        for (int i = 0; i < (int)Collections.max(Factors); i++) {
+            for (int j = 0; j < (int)Collections.max(Factors); j++) {
+                for (int k = 0; k < (int)Collections.max(Factors); k++) {
                     if (i + j + k == sum && (Factors.contains(i) && (Factors.contains(j) && Factors.contains(k)))) {
                         Map <Integer, Integer>  numbs = new HashMap<>();
                         numbs =  updateMap(numbs, i);
